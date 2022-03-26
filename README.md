@@ -2,7 +2,7 @@
 
 **Neo4J**
 ```
-   MATCH (p:Person)-[:ACTED_IN]->(m:Movie {title : "The Matrix"})
+    MATCH (p:Person)-[:ACTED_IN]->(m:Movie {title : "The Matrix"})
     RETURN p.name
 ```
 ```
@@ -66,5 +66,5 @@ db.countries.aggregate([
 ])
 ```
 ```
-    db.countries.find({"name" : "Botswana"}, {"area" : 1})
+db.countries.find({"name" : "Botswana"}, {"area" : 1})
 ```
